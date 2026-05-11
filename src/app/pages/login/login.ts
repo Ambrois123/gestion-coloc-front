@@ -16,6 +16,8 @@ export class Login {
   email: string = '';
   password: string = '';
 
+  logoUrl: string = 'images/gestioncoloc_logo.png';
+  
   constructor(
     private authService: AuthService,
     private router: Router

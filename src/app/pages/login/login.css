@@ -1,0 +1,22 @@
+login.css
+body {
+  background: linear-gradient(135deg, #f4f7fc, #dbe9ff);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 18px;
+  border: none;
+}
+
+.form-control {
+  height: 48px;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  height: 48px;
+  border-radius: 10px;
+  font-weight: 600;
+}

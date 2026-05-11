@@ -1,9 +1,48 @@
-<h2>Connexion</h2>
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img
+        [src]="logoUrl"
+        alt="Logo"
+        width="230"
+        class="d-inline-block align-text-top">
+    </a>
+  </div>
+</nav>
 
-<input [(ngModel)]="email" placeholder="Email">
-<br><br>
+<div class="d-flex justify-content-center align-items-start pt-4">
+  <div class="card shadow-lg p-4 login-card">
 
-<input [(ngModel)]="password" type="password" placeholder="Mot de passe">
-<br><br>
+    <h2 class="text-center mb-4 text-primary fw-bold">
+      Connexion
+    </h2>
 
-<button (click)="login()">Se connecter</button>
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input
+        [(ngModel)]="email"
+        type="email"
+        class="form-control"
+        placeholder="john@gmail.com"
+      >
+    </div>
+
+    <div class="mb-4">
+      <label class="form-label">Mot de passe</label>
+      <input
+        [(ngModel)]="password"
+        type="password"
+        class="form-control"
+        placeholder="********"
+      >
+    </div>
+
+    <button
+      class="btn btn-primary w-100"
+      (click)="login()"
+    >
+      Se connecter
+    </button>
+
+  </div>
+</div>
